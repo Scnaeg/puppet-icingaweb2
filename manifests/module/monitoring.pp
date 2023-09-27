@@ -116,8 +116,8 @@ class icingaweb2::module::monitoring (
 
   case $facts['os']['family'] {
     'Debian': {
-      $install_method = 'package'
-      $package_name   = 'icingaweb2-module-monitoring'
+      $install_method = 'none'
+      $package_name   = undef
     }
     default: {
       $install_method = 'none'
